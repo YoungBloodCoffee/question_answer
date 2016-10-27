@@ -1,0 +1,11 @@
+<a href="/#/dashboard">Home</a> <a href="/logout">Logout</a>
+<h1>New Question</h1>
+<form ng-submit="add_question()">
+	<p>Question</p>
+		<input type="text" ng-model="Q.question">
+	<p>Description (optional)</p>
+	<input type="text" ng-model="Q.description">
+	<p>
+		<input type="submit" value="Submit">
+	</p>
+</form>

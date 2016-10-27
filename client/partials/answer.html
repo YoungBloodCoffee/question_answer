@@ -1,0 +1,17 @@
+<a href="/#/dashboard">Home</a>  <a href="/#/show/{{One_question._id}}">Back to question</a>
+<a href="/logout">Logout</a>
+</div>
+<h1>Answer the Question</h1>
+
+<h3>{{One_question.question}}</h3>
+<h5>{{One_question.description}}</h5>
+
+<form ng-submit="answer_question()">
+	<p>Your answer</p>
+		<input type="text" ng-model="A.answer">
+	<p>Supporting details (optional)</p>
+	<input type="text" ng-model="A.support">
+	<p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
